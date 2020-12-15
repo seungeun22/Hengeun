@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	<title>연극</title>
+
+	<style type="text/css">
+		*{
+		box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+	    
+	}
+
+	body{
+		margin: 0;
+		font-family: 'NanumSquare', sans-serif;
+	    min-width: 1920px;
+      max-width: 1920px;		
+	}
+
+
+	.navibar{
+		height: 68px;
+		padding-left: 240px;
+		padding-right: 240px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px -3px gray;
+		
+
+	}
+
+	.navibar #logo{
+        line-height: 68px;
+     }
+
+    .navibar #logo img{
+        vertical-align: middle;
+     }
+
+    .navibar #menu{
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0; 
+      }
+
+    .navibar #menu  .hahaha{
+    	color: #2db400;
+    	font-weight: 900;
+    }
+
+    .navibar #menu .hahaha1:hover{
+        color: #2db400;
+    }
+
+    .navibar #menu li{
+        float: left;
+        margin-left: 80px;
+        line-height: 68px;
+      
+   
+    }
+
+    .navibar #menu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+   
+    }
+
+
+
+    .content1{
+    	margin-left: 240px;
+    	margin-top: 80px;
+    }
+
+    .content1_name{
+    	font-size: 28px;
+    	font-weight: 800;
+    }
+
+    .content1_box{
+    	margin-top: 24px;
+    }
+
+    .content1_information{
+    	display: inline-block;
+    	
+    }
+
+    .content1_info2{
+    	margin-left: 18px;
+    }
+    
+    .content1_img img{ 
+    transform: scale(1); 
+    -webkit-transform: scale(1); 
+    -moz-transform: scale(1); 
+    -ms-transform: scale(1); 
+    -o-transform: scale(1); 
+    transition: all 0.5s ease-in-out; 
+   /* 서서히 확대 */
+    } 
+    .content1_img:hover img{ 
+      transform: scale(1.1); 
+      -webkit-transform: scale(1.1); 
+      -moz-transform: scale(1.1); 
+      -ms-transform: scale(1.1); 
+      -o-transform: scale(1.1); 
+    }
+
+    .content1_img  {
+    	border-radius: 18px;
+    	overflow: hidden;
+    }
+
+    .content1 a{
+    	text-decoration: none;
+    	color: #545454;
+    }
+
+    .contents_name{
+        margin-top: 10px;
+        font-size: 20px;
+        color: #000;
+        font-weight: 800;
+
+    }
+
+    .contents_name span{
+      font-weight: 500;
+      font-size: 14px;
+
+    }
+
+    
+    .contents_star{
+        margin-top: 5px;
+        font-weight: 500;
+        color: #000;
+
+    }
+
+    .contents_star span{
+        color: red;
+        font-weight: 500;
+    }
+
+    .contents_date{
+        margin-top: 12px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .contents_place{
+        margin-top: 5px;
+        font-weight: 500;
+        
+    }
+
+
+
+    .content2{
+    	margin-left: 240px;
+    	margin-top: 48px;
+    }
+
+    .content2_name{
+    	font-size: 28px;
+    	font-weight: 800;
+    }
+
+    .content2_box{
+    	margin-top: 24px;
+    }
+
+    .content2 a{
+    	text-decoration: none;
+    	color: #545454;
+    }
+
+    .footer {
+    clear: both;
+    position: relative;
+    height: 150px;
+    margin-top: 1px;
+    padding-top: 34px;
+    border-top: 1px solid #eef1f3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f7f9fa;
+    zoom: 1;
+
+    }
+
+    .footer {
+        background-color: #f8f9fa;
+        height: 100px;
+        padding-top: 20px;
+        margin-top: 120px;
+
+    }
+
+    .footer p{
+        text-align: center;
+        font-size: 12px;
+        color: #AAAAAA;
+        margin-bottom: 5px;
+    }
+
+    .footer div{
+        text-align: center;
+    }
+
+    .footer a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #AAAAAA;
+       
+    }
+
+    .footer_a{
+        margin-bottom: 30px;
+    }
+
+    .footer a:not(:last-child)::after{
+        content: 'ㅣ'
+    }
+
+	</style>
+</head>
+<body>
+	<div class="navibar">
+		<a href="../index.html" id="logo">
+			<img src="https://i.postimg.cc/kG3WJ2qQ/naverlogo.png" height="24">
+		</a>
+
+
+		<ul id="menu">
+          <li><a class="hahaha1" href="../index.html">전체</a></li>
+          <li><a class="hahaha" class="hahaha" href="./카테고리/카테고리_연극.html">연극</a></li>
+          <li><a class="hahaha1" href="../카테고리/카테고리_뮤지컬.html">뮤지컬</a></li>
+          <li><a class="hahaha1" href="#">콘서트</a></li>
+          <li><a class="hahaha1" href="#">가족/아동</a></li>
+        </ul>
+	</div>
+
+	<div class="content1">
+		<div class="content1_name"><p>인기 연극</p></div>
+
+		<div class="content1_box">
+
+		    <div class="content1_information">
+		    	<div class="content1_info1">
+		    	<a href="../상세페이지/상세페이지.html">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/c4K7Rwjz/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">한뼘사이</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.9 </span></div>
+                    <div class="contents_date">17.03.01 ~ 오픈런</div>
+                    <div class="contents_place">서연아트홀</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/zvwj3tGq/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">핫식스</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.8 </span></div>
+                    <div class="contents_date">18.08.02 ~ 오픈런</div>
+                    <div class="contents_place">대학로 키득키득아트홀</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/Y2RZzs9F/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">옥탑방 고양이</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.8 </span></div>
+                    <div class="contents_date">10.04.06 ~ 오픈런</div>
+                    <div class="contents_place">틴틴홀</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+			    <div class="content1_info2">
+			    <a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/Gh17mM9Q/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">오마이갓</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.8 </span></div>
+                    <div class="contents_date">17.07.01 ~ 오픈런</div>
+                    <div class="contents_place">봄날아트홀 2관</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/59k9R44q/2.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name"><연극열전8> 킹스 스피치</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.8 </span></div>
+                    <div class="contents_date">20.11.28 ~ 21.02.07</div>
+                    <div class="contents_place">대학로아트원씨어터 2관</div>
+			    </div>
+			    </a> 
+                </div>
+		    </div>
+
+		</div>
+    </div>
+
+    <div class="content2">
+    	<div class="content2_name"><p>전체 연극</p></div>
+
+    	<div class="content2_box">
+
+		    <div class="content1_information">
+		    	<div class="content1_info1">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/8cs1J1Z2/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">그녀를 믿지마세요</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.4 </span></div>
+                    <div class="contents_date">18.06.01 ~ 오픈런</div>
+                    <div class="contents_place">대학로 스타시티 타이니앨리스극장</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/nV5s45q4/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">너의 목소리가 들려</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.7 </span></div>
+                    <div class="contents_date">18.12.06 ~ 오픈런</div>
+                    <div class="contents_place">봄날아트홀</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/j2qGCZSC/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">쉬어매드니스</div>
+                    <div class="contents_star"><span>평균 별점 ★ 8.8 </span></div>
+                    <div class="contents_date">15.11.12 ~ 오픈런</div>
+                    <div class="contents_place">콘텐츠박스</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/vHNpH7FH/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">비프</div>
+                    <div class="contents_star"><span>평균 별점 ★ 8.7 </span></div>
+                    <div class="contents_date">20.12.05 ~ 21.02.14</div>
+                    <div class="contents_place">드림아트센터 3관</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/c4sqhQWK/image.jpg" width="274" height="398">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">아마데우스</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.3 </span></div>
+                    <div class="contents_date">20.11.17 ~ 21.01.17</div>
+                    <div class="contents_place">광림아트센터 BBCH홀</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+
+
+		</div>
+
+
+    </div>
+
+    <div class="content1">
+        
+
+        <div class="content1_box">
+
+            <div class="content1_information">
+                <div class="content1_info1">
+                <a href="#">
+                <div class="content1_img">
+                    <img src="https://i.postimg.cc/RC7tmm8g/20091514072952837341.jpg" width="274" height="398">
+                </div>
+                <div class="content1_word">
+                    <div class="contents_name">당신이 밤을 건너올 때</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.3 </span></div>
+                    <div class="contents_date">20.12.03 ~ 20.12.20</div>
+                    <div class="contents_place">국립극단 백성희장민호극장</div>
+                </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="content1_information">
+                <div class="content1_info2">
+                <a href="#">
+                <div class="content1_img">
+                    <img src="https://i.postimg.cc/q7DL8r0s/image.jpg" width="274" height="398">
+                </div>
+                <div class="content1_word">
+                    <div class="contents_name">사랑에 스치다</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.0 </span></div>
+                    <div class="contents_date">20.12.16 ~ 20.12.27</div>
+                    <div class="contents_place">스카이시어터 2관</div>
+                </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="content1_information">
+                <div class="content1_info2">
+                <a href="#">
+                <div class="content1_img">
+                    <img src="https://i.postimg.cc/qMHGcjf5/image.jpg" width="274" height="398">
+                </div>
+                <div class="content1_word">
+                    <div class="contents_name">오백에 삼십</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.5 </span></div>
+                    <div class="contents_date">18.09.04 ~ 오픈런</div>
+                    <div class="contents_place">대학로 아트포레스트 1관</div>
+                </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="content1_information">
+                <div class="content1_info2">
+                <a href="#">
+                <div class="content1_img">
+                    <img src="https://i.postimg.cc/NM0ncbG4/image.png" width="274" height="398">
+                </div>
+                <div class="content1_word">
+                    <div class="contents_name">죽여주는 이야기</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.7 </span></div>
+                    <div class="contents_date">08.10.01 ~ 오픈런</div>
+                    <div class="contents_place">삼형제극장</div>
+                </div>
+                </a>
+                </div>
+            </div>
+
+            <div class="content1_information">
+                <div class="content1_info2">
+                <a href="#">
+                <div class="content1_img">
+                    <img src="https://i.postimg.cc/wMJRWCdp/image.jpg" width="274" height="398">
+                </div>
+                <div class="content1_word">
+                    <div class="contents_name">행오버</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.4 </span></div>
+                    <div class="contents_date">20.03.16 ~ 오픈런</div>
+                    <div class="contents_place">해피씨어터</div>
+                </div>
+                </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p> Copyright&copy; Naver Corp. All Rights Reserved.</p>
+        <div class="footer_a">
+            <a href="#">제휴제안</a>
+            <a href="#">기업윤리 상담센터</a>
+            <a href="#">개인정보 처리방침</a>
+        </div>
+                
+            
+        
+    </div>
+
+
+	
+</body>
+</html>

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>네이버공연</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+	<style>
+	*{
+		box-sizing: border-box;
+
+	    
+	}
+
+	body{
+		margin: 0;
+		font-family: 'NanumSquare', sans-serif;
+	    min-width: 1920px;
+        max-width: 1920px;		
+	}
+
+
+	.navibar{
+		height: 68px;
+		padding-left: 240px;
+		padding-right: 240px;
+		
+
+	}
+
+	.navibar #logo{
+        line-height: 68px;
+     }
+
+    .navibar #logo img{
+        vertical-align: middle;
+     }
+
+    .navibar #menu{
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0; 
+      }
+
+    .navibar #menu a:hover{
+        color: #2db400;
+    }
+
+    .navibar #menu li{
+        float: left;
+        margin-left: 80px;
+        line-height: 68px;
+      
+   
+    }
+
+    .navibar #menu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+
+        
+    }
+
+
+    
+    .header{
+        height: 700px;      
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-image: url(https://i.postimg.cc/65Lm1zZy/image.jpg);
+
+    }
+
+    .content1{
+        width: 1920px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+  
+
+    .content1 h2{
+    	font-size: 42px;
+    	color: black;
+    	text-align: left;
+    	margin-left: 240px;
+    	margin-top: 120px;
+    	margin-bottom: 20px;
+    	font-weight: 800;
+
+    }
+
+
+    .content1 p{
+    	font-size: 16px;
+    	margin-left: 240px;
+    	color: #777;
+    }
+
+    .content1 .content1_1 h2:after {
+    width: 37px;
+    height: 2px;
+    display: block;
+    content: '';
+    background: #000;
+    margin: 20px 0 10px;
+    }
+
+    .content1 .content1_1 .hashtag{
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-right: 132px;
+    }
+
+    .hashtag ul{
+    	display: block;
+    	list-style: none;   	
+    }
+
+    .content1 .content1_1{
+        float: left;
+    }
+
+    .hashtag a{
+    	text-decoration: none;
+    	padding: 8px 15px 8px;
+        border: 1px solid #c1c1c1;
+        background: #fff;
+        border-radius: 50px;
+        color: #777777;
+        font-size: 20px;
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .hashtag a:hover{
+    	background-color: #2db400;
+    	color: #ffffff;
+    	border: 1px solid #2db400;
+    }
+
+    .hashtag li{
+    	display: block;
+    	margin: 2px 2px;
+    	min-height: 40px;
+
+    }
+
+    .content1_2{
+        width: 334px;
+        float: left;
+        margin-right: 30px;
+    }
+
+ 
+
+    .contents{
+    display: block;
+    text-align: left;
+    color: #545454;
+    
+    text-decoration: none;
+    float: left;
+    
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 1px solid #c1c1c1;
+    border-radius: 15px;
+    width: 334px;
+    height: 580px;
+
+    }
+
+    .contents:hover{
+    box-shadow: 8px 8px #2db400;
+    }
+
+
+
+    .contents img{
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+
+
+    
+    }
+
+    .mid-banner{
+
+    }
+
+    .mid-banner img{
+        margin-top: 108px;
+    
+    }
+
+    .content2 h3{
+        font-size: 42px;
+        color: black;
+        text-align: left;
+        margin-left: 240px;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        font-weight: 800;
+
+    }
+
+    .content2 .content2_1 h3:after {
+    width: 37px;
+    height: 2px;
+    display: block;
+    content: '';
+    background: #000;
+    margin: 20px 0 10px;
+    }
+
+    .contents2{
+    display: block;
+    text-align: left;
+    color: #545454;
+    width: 225px;
+    text-decoration: none;
+    float: left;
+    margin-right: 28px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    border: 1px solid #c1c1c1;
+    border-radius: 15px;
+    width: 334px;
+    height: 580px;
+
+
+    }
+
+    .contents2 img{
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+
+
+    
+    }
+
+    .contents2:hover{
+    box-shadow: 8px 8px #2db400;
+    }
+    
+
+    .content2 .content2_imgs{
+        margin-left: 240px;
+        margin-bottom: 120px;
+    }
+
+    .content3 h4{
+        font-size: 42px;
+        color: black;
+        text-align: left;
+        margin-left: 240px;
+        margin-top: 120px;
+        margin-bottom: 20px;
+        font-weight: 800;
+        float: left;
+
+    }
+
+    .content3 .content3_1 h4:after {
+    width: 37px;
+    height: 2px;
+    display: block;
+    content: '';
+    background: #000;
+    margin: 20px 0 10px;
+    }
+
+    
+    
+
+    .contents_name{
+        margin-top: 10px;
+        font-size: 20px;
+        color: #000;
+        font-weight: 800;
+
+    }
+
+    .contents_tag{
+        margin-top: 10px;
+        font-weight: 800;
+        color: #2db400;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .contents_star{
+        margin-top: 5px;
+        font-weight: 600;
+        color: #000;
+
+    }
+
+    .contents_star span{
+        color: red;
+        font-weight: 800;
+    }
+
+    .contents_date{
+        margin-top: 12px;
+        font-weight: 500;
+    }
+
+    .contents_place{
+        margin-top: 5px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .contents2_name{
+        margin-top: 10px;
+        font-size: 20px;
+        color: #000;
+        font-weight: 800;
+
+
+    }
+
+    .carousel-inner{
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .carousel{
+    position: relative;
+    }
+
+    .carousel-control{
+    position: absolute;
+    margin-top: 718px;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    opacity: .4;
+    
+
+
+    }
+
+    .carousel-control:hover{
+        color: #2db400;
+
+    }
+
+    .carousel-inner img{
+        vertical-align: middle;
+        display: block;
+        max-width: 100%;
+        border: 0;
+        line-height: 1;
+    }
+
+
+
+
+    .footer {
+    clear: both;
+    position: relative;
+    height: 150px;
+    margin-top: 1px;
+    padding-top: 34px;
+    border-top: 1px solid #eef1f3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f7f9fa;
+    zoom: 1;
+
+    }
+
+    .footer {
+        background-color: #f8f9fa;
+        height: 100px;
+        padding-top: 20px;
+        margin-top: 120px;
+
+    }
+
+    .footer p{
+        text-align: center;
+        font-size: 12px;
+        color: #AAAAAA;
+        margin-bottom: 5px;
+    }
+
+    .footer div{
+        text-align: center;
+    }
+
+    .footer a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #AAAAAA;
+       
+    }
+
+    .footer_a{
+        margin-bottom: 30px;
+    }
+
+    .footer a:not(:last-child)::after{
+        content: 'ㅣ'
+    }
+
+
+    
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="navibar">
+		<a href="./index.html" id="logo">
+			<img src="https://i.postimg.cc/kG3WJ2qQ/naverlogo.png" height="24">
+		</a>
+
+
+		<ul id="menu">
+          <li><a href="./index.html">전체</a></li>
+          <li><a href="./카테고리/카테고리_연극.html">연극</a></li>
+          <li><a href="./카테고리/카테고리_뮤지컬.html">뮤지컬</a></li>
+          <li><a href="#">콘서트</a></li>
+          <li><a href="#">가족/아동</a></li>
+        </ul>
+	</div>
+	<div class="header"></div>
+
+	<div class="content1">
+		<div class="content1_1">
+			<h2>이건 어때요?<div></div>인기 검색어</h2>
+			<p>고민을 덜어주는 추천 검색어</p>
+        
+		    <div class="hashtag">
+			    <ul>
+				    <li><a href="./추천검색어/추천키워드페이지.html">#연애하고 싶어지는</a></li>
+				    <li><a href="#">#큰웃음 빵빵</a></li>
+				    <li><a href="#">#오늘은 엄마랑 자야겠다</a></li>
+				    <li><a href="#">#범인은 누구</a></li>
+				    <li><a href="#">#울고싶은 오늘</a></li>
+				    <li><a href="#">#부모님도 좋아하는</a></li>
+				    <li><a href="#">#아이와 함께</a></li>
+					
+			    </ul>
+		    </div>
+        </div>
+	
+		<div class="content1_2">
+			<a href="#" class="contents">
+				<img src="https://i.postimg.cc/Y2RZzs9F/image.jpg" width="294" height="426">
+				<div class="contents_name">옥탑방 고양이</div>
+                <div class="contents_star">네이버 예약 <span>★ 9.4 </span>  </span>인터파크 <span> ★ 9.5</span></div>
+                <div class="contents_tag">#연애하고 싶어지는 #큰웃음 빵빵 #로맨스 #코미디</div>  
+
+			</a>
+		</div>
+
+		<div class="content1_2">
+            <a href="#" class="contents">
+                <img src="https://i.postimg.cc/wMJRWCdp/image.jpg" width="294" height="426">
+                <div class="contents_name">행오버</div>
+                <div class="contents_star">네이버 예약 <span>★ 9.2 </span>  </span>인터파크 <span> ★ 9.7</span></div>
+                <div class="contents_tag">#범인은 누구 #추리스릴러 #큰웃음 빵빵 #코미디</div>
+            </a>
+        </div>
+
+		<div class="content1_2">
+			<a href="#" class="contents">
+				<img src="https://i.postimg.cc/8CH2vcJ8/image.jpg" width="294" height="426">
+				<div class="contents_name">알사탕 - 서울</div>
+                <div class="contents_star">네이버 예약 <span>★ 9.6 </span>  </span>인터파크 <span> ★ 9.9</span></div>
+                <div class="contents_tag">#아이와 함께</div>
+			</a>
+		</div>    
+    </div>
+
+    <div class="mid-banner">
+        <a href="./네이버공연홈페이지.html">
+            <img src="https://i.postimg.cc/9Q5fpDVb/1.jpg" width="100%">
+        </a>
+    </div>
+
+    <div class="content2">
+        <div class="content2_1">
+            <h3>이건 어때요?<div></div>인기 콘텐츠</h3>
+        </div>
+
+        <div class="content2_imgs">
+
+        <div class="content2_2">
+               <a href="#" class="contents2">
+                   <img src="https://i.postimg.cc/c4sqhQWK/image.jpg" width="294" height="426">
+                   <div class="contents_name">아마데우스</div>
+                   <div class="contents_star">네이버 예약 <span>★ 9.3 </span>  </span>인터파크 <span> ★ 9.5</span></div>
+                   <div class="contents_date">20.11.17 ~ 21.01.17</div>
+                   <div class="contents_place">광림아트센터 BBCH홀</div> 
+               </a>
+        </div>
+
+            <div class="content2_2">
+               <a href="#" class="contents2">
+                <img src="https://i.postimg.cc/hvvv6hQT/image.jpg" width="294" height="426">
+                <div class="contents_name">환상동화</div>
+                <div class="contents_star">네이버 예약 <span>★ 9.8 </span>  </span>인터파크 <span> ★ 9.7</span></div>
+                <div class="contents_date">20.12.20 ~ 21.03.01</div>
+                <div class="contents_place">동덕여대 공연예술센터 코튼홀</div>
+               </a>
+            </div>
+
+            <div class="content2_2">
+               <a href="#" class="contents2">
+                 <img src="https://i.postimg.cc/zvwj3tGq/image.jpg" width="294" height="426">
+                <div class="contents_name">핫식스</div>
+                <div class="contents_star">네이버 예약 <span>★ 9.6 </span>  </span>인터파크 <span> ★ 9.9</span></div>
+                <div class="contents_date">18.08.02 ~ 오픈런</div>
+                <div class="contents_place">대학로 키득키득아트홀</div>
+               </a>
+            </div>
+
+            <div class="content2_2">
+                <a href="#" class="contents2">
+                 <img src="https://i.postimg.cc/59k9R44q/2.jpg" width="294" height="426">
+                <div class="contents_name"><연극열전8> 킹스 스피치</div>
+                <div class="contents_star">네이버 예약 <span>★ 9.6 </span>  </span>인터파크 <span> ★ 9.8</span></div>
+                <div class="contents_date">20.11.28 ~ 21.02.07</div>
+                <div class="contents_place">대학로아트원씨어터 2관</div>
+                </a>
+
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+
+    <div class="content3">
+        <div class="content3_1">
+            <h4>오늘의 추천 공연</h4>
+        </div>
+    
+
+
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                <img src="https://i.postimg.cc/vHnkp72y/Kakao-Talk-20201204-022738699.jpg" width="1920">
+                </div>
+
+                <div class="item">
+                <img src="https://i.postimg.cc/0QvkTt1V/Kakao-Talk-20201213-230403148.jpg" width="1920">
+               
+                </div>
+
+                <div class="item">
+                 <img src="https://i.postimg.cc/bvy8LZx5/image.jpg" width="1920">
+             
+                </div>
+    
+             </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">          </span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <div class="footer">
+        <p> Copyright&copy; Naver Corp. All Rights Reserved.</p>
+        <div class="footer_a">
+            <a href="#">제휴제안</a>
+            <a href="#">기업윤리 상담센터</a>
+            <a href="#">개인정보 처리방침</a>
+        </div>
+                
+            
+        
+    </div>
+    
+
+
+
+
+
+
+	
+	
+</body>
+</html>

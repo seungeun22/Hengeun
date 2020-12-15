@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	<title>연애하고 싶어지는</title>
+	<style type="text/css">
+	
+	*{
+		box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+	    
+	}
+
+	body{
+		margin: 0;
+		font-family: 'NanumSquare', sans-serif;
+	    min-width: 1920px;
+      max-width: 1920px;		
+	}
+
+	.navibar{
+		height: 68px;
+		padding-left: 240px;
+		padding-right: 240px;
+		box-sizing: border-box;
+        box-shadow: 0 2px 8px -3px gray;
+		
+
+	}
+
+	.navibar #logo{
+        line-height: 68px;
+     }
+
+    .navibar #logo img{
+        vertical-align: middle;
+     }
+
+    .navibar #menu{
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0; 
+      }
+
+    .navibar #menu a:hover{
+        color: #2db400;
+    }
+
+    .navibar #menu li{
+        float: left;
+        margin-left: 80px;
+        line-height: 68px;
+      
+   
+    }
+
+    .navibar #menu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+
+        
+    }
+
+    .keyword_box{
+    	height: 268px;
+    	background-color: #F3F3F3;
+    }
+
+    .glasses{
+    	cursor: pointer;
+    }
+
+
+
+    .search_area{
+    	width: 680px;
+    	border: 2px solid #888;
+        border-width: 0 0 2px 0;
+        margin-left: 572px;
+        position: relative;
+        top: 98px;
+        padding-left: 20px;
+    }
+
+    p{
+    	font-size: 28px;
+    	font-weight: 600;
+    	margin-bottom: 8px;
+    }
+
+    .glasses img{
+    	width: 72px;
+    	height: 72px;
+    	position: relative;
+    	left: 1256px;
+    	top: 36px;
+
+    }
+
+    .keyword_boxes{
+    	margin-top: 60px;
+    }
+
+    .keyword_boxes ul{
+    	display: block;
+    	text-align: center;
+    }
+
+    .keyword_boxes a{
+    	font-size: 20px;
+    	color: #505050;
+    	font-weight: 400;
+    	display: inline-block;
+    	border: 1px solid #CACACA;
+    	background-color: white;
+    	margin-right: 10px;
+    	padding: 8px 20px 4px 20px;
+    	border-radius: 28px;
+    	text-decoration: none;
+    }
+
+    .keyword_boxes li{
+    	display: inline-block;
+    	
+    }
+
+    
+
+    .keyword_boxes a:hover{
+    	color: white;
+    	font-weight: 700;
+    	background-color: #2db400;
+    }
+
+    .line{
+    	border: 2px solid #2db400;
+    	width: 960px;
+        border-width: 0 0 2px 0;
+        margin-left: 480px;
+        margin-top: 24px;
+        
+    }
+
+    .a1111{
+    	font-size: 28px;
+    	font-weight: 700;
+    	text-align: center;
+    	margin-top: 60px;
+    }
+
+    .a1111 span{
+    	color: #2db400;
+
+    }
+
+    .content1{
+    	height: 1160px;
+    }
+
+    .content1_box{
+    	margin-left: 280px;
+    	margin-top: 60px;
+    }
+
+    .a2222{
+    	margin-bottom: 8px;
+    	margin-left: 10px;
+    	font-size: 18px;
+    }
+
+    .a2222 .b1 {
+    	color: #2db400;
+    	font-weight: 700;
+    }
+
+    .a2222 .b2{
+    	margin-left: 1092px;
+    }
+
+    .a2222 .b3{
+    	font-weight: 700;
+    	margin-right: 8px;
+
+    }
+
+    .a2222 .b4{
+    	font-weight: 300;
+
+    }
+
+    .a2222 .b4:hover{
+    	font-weight: 700;
+        cursor: pointer;
+    }
+
+    
+
+    .content1_information{
+    display: inline-block;
+    text-align: left;
+    color: #545454;
+    width: 225px;
+    text-decoration: none;
+    margin-left: 10px;
+    
+    
+    padding-top: 18px;
+    padding-left: 18px;
+    border: 1px solid #c1c1c1;
+    border-radius: 15px;
+    width: 324px;
+    height: 576px;
+
+    }
+
+    .content1_information a{
+    	text-decoration: none;
+    }
+
+    .content1_information a:hover{
+    	color: #ffffff;
+    	border: 0 0 1 0 solid #2db400;
+    }
+
+    .content1_information:hover{
+    box-shadow: 4px 4px #2db400;
+    }
+
+    .content1_img img{
+    	border-radius: 15px;
+
+    }
+
+    .content1_img{
+    	width: 288px;
+    	overflow: hidden;
+    	border-radius: 15px;
+
+    }
+
+    .content1_img img{ 
+    transform: scale(1); 
+    -webkit-transform: scale(1); 
+    -moz-transform: scale(1); 
+    -ms-transform: scale(1); 
+    -o-transform: scale(1); 
+    transition: all 0.5s ease-in-out; 
+   /* 서서히 확대 */
+    } 
+    .content1_img:hover img{ 
+      transform: scale(1.1); 
+      -webkit-transform: scale(1.1); 
+      -moz-transform: scale(1.1); 
+      -ms-transform: scale(1.1); 
+      -o-transform: scale(1.1); 
+    }
+
+    .contents_name{
+        margin-top: 10px;
+        font-size: 20px;
+        color: #000;
+        font-weight: 800;
+
+    }
+
+    .contents_name span{
+      font-weight: 500;
+      font-size: 14px;
+
+    }
+
+    .contents_tag{
+        margin-top: 15px;
+        line-height: 25px;
+        font-weight: 800;
+        color: #2db400;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .contents_star{
+        margin-top: 5px;
+        font-weight: 500;
+        color: #000;
+
+    }
+
+    .contents_star span{
+        color: red;
+        font-weight: 500;
+    }
+
+    .content2_box{
+    	margin-left: 280px;
+    	margin-top: 24px;
+
+    	
+    }
+
+    .footer {
+    clear: both;
+    position: relative;
+    height: 150px;
+    margin-top: 1px;
+    padding-top: 34px;
+    border-top: 1px solid #eef1f3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f7f9fa;
+    zoom: 1;
+
+    }
+
+    .footer {
+        background-color: #f8f9fa;
+        height: 100px;
+        padding-top: 20px;
+        margin-top: 120px;
+
+    }
+
+    .footer p{
+        text-align: center;
+        font-size: 12px;
+        color: #AAAAAA;
+        margin-bottom: 5px;
+    }
+
+    .footer div{
+        text-align: center;
+    }
+
+    .footer a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #AAAAAA;
+       
+    }
+
+    .footer_a{
+        margin-bottom: 30px;
+    }
+
+    .footer a:not(:last-child)::after{
+        content: 'ㅣ'
+    }
+
+
+
+
+
+
+
+    
+
+    
+
+	</style>
+</head>
+<body>
+	<div class="navibar">
+		<a href="../index.html" id="logo">
+			<img src="https://i.postimg.cc/kG3WJ2qQ/naverlogo.png" height="24">
+		</a>
+
+
+		<ul id="menu">
+          <li><a href="../index.html">전체</a></li>
+          <li><a href="../카테고리/카테고리_연극.html">연극</a></li>
+          <li><a href="../카테고리/카테고리_뮤지컬.html">뮤지컬</a></li>
+          <li><a href="#">콘서트</a></li>
+          <li><a href="#">가족/아동</a></li>
+        </ul>
+	</div>
+
+	<div class="keyword_box">
+		<div class="search_area">
+			<p class="word"> 연애하고 싶어지는</p>
+		</div>
+			<div class="glasses">
+				<img src="https://i.postimg.cc/LX1n36BW/3.png">
+			</div>
+
+			<div class="keyword_boxes">
+				<ul>
+					<li><a href="#">#재미있는</a></li>
+					<li><a href="#">#범인은 누구</a></li>
+					<li><a href="#">#큰웃음 빵빵</a></li>
+					<li><a href="#">#로맨스</a></li>
+					<li><a href="#">#코미디</a></li>
+					<li><a href="#">#내안의 흥이 마구 폭발한다</a></li>
+				</ul>
+			</div>
+	</div>
+
+	<div class="search_result">
+				<div class="line"></div>
+				<div class="a1111"><span>연애하고 싶어지는</span> 검색결과</div>
+				
+	</div>
+
+	
+	<div class="content1">
+		<div class="content1_box">
+
+			
+			<div class="a2222">검색결과 <span class="b1">8</span>건조회 <span class="b2"><span class="b3">최신순</span> <span class="b4">조회순</span></span></div>
+			<div class="content1_information">
+		    	<div class="content1_info1">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/Y2RZzs9F/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">옥탑방 고양이</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.4 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #큰웃음 빵빵 #로맨스 #코미디</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/c4K7Rwjz/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">한뼘사이</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.9 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #큰웃음 빵빵 #로맨스 #코미디</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/ncjZM82X/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">빨래</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.6 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #로맨스 #드라마 #코미디 #뮤지컬</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/JzjLcb9m/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">뷰티풀라이프</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.7 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #로맨스 #드라마 #연극</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+			
+
+
+
+
+		</div>
+
+		<div class="content2_box">
+			
+			<div class="content1_information">
+		    	<div class="content1_info1">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/nV5s45q4/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">너의 목소리가 들려</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.7 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #큰웃음 빵빵 #로맨스 #코미디</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/yx356KKB/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+                    <div class="contents_name">택시 안에서</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.5 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #로맨스 #드라마 #울컥</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/RV9y5j8r/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">작업의 정석</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.1 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #원작/리메이크 #로맨스 #코미디</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+
+		    <div class="content1_information">
+		    	<div class="content1_info2">
+		    	<a href="#">
+			    <div class="content1_img">
+				    <img src="https://i.postimg.cc/W4DfwjDZ/image.jpg" width="288" height="416">
+			    </div>
+			    <div class="content1_word">
+				    <div class="contents_name">연애플레이리스트</div>
+                    <div class="contents_star"><span>평균 별점 ★ 9.4 </span></div>
+                    <div class="contents_tag">#연애하고 싶어지는 #원작/리메이크 #로맨스</div>
+			    </div>
+			    </a>
+			    </div>
+		    </div>
+			
+
+
+
+
+		</div>
+
+	</div>
+
+	<div class="footer">
+        <p> Copyright&copy; Naver Corp. All Rights Reserved.</p>
+        <div class="footer_a">
+            <a href="#">제휴제안</a>
+            <a href="#">기업윤리 상담센터</a>
+            <a href="#">개인정보 처리방침</a>
+        </div>
+                
+            
+        
+    </div>
+
+	
+	
+</body>
+</html>

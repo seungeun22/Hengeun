@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>한뼘사이</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+	<style type="text/css">
+		 *{
+		box-sizing: border-box;
+
+	    
+	}
+
+	body{
+		margin: 0;
+		font-family: 'NanumSquare', sans-serif;
+	    min-width: 1920px;		
+	}
+
+
+
+
+		  .navibar{
+		height: 68px;
+		padding-left: 240px;
+		padding-right: 240px;
+		
+
+	}
+
+	.navibar #logo{
+        line-height: 68px;
+     }
+
+    .navibar #logo img{
+        vertical-align: middle;
+     }
+
+    .navibar #menu{
+        list-style: none;
+        float: right;
+        margin: 0;
+        padding: 0; 
+      }
+
+    .navibar #menu a:hover{
+        color: #2db400;
+    }
+
+    .navibar #menu li{
+        float: left;
+        margin-left: 80px;
+        line-height: 68px;
+      
+   
+    }
+
+    .navibar #menu li a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+
+        
+    }
+
+    .header{
+    	background-image: url(https://i.postimg.cc/nhFSBZNz/Kakao-Talk-20201211-234833554.jpg);
+    	height: 480px;      
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .header img{
+    	overflow: hidden;
+        display: block;
+        position: relative;
+        top: 436px;
+        box-sizing: border-box;
+        width: 240px;
+        height: 344px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 3px;
+        margin: 0px auto;
+        background: rgb(248, 248, 248);
+        transition: all 300ms ease 0s;
+        margin-left: 240px;
+    }
+
+    .poster{
+    	display: block;
+    	margin-left: 500px;
+    	margin-top: 20px;
+    }
+
+    .contents_name{
+    	font-size: 32px;
+    	font-weight: 800;
+    }
+
+    .contents_name img{
+    	display: inline-block;
+    	margin-left: 8px;
+    }
+
+    .contents_classification{
+    	margin-top: 16px;
+    }
+    .contents_classification a{
+    	text-decoration: none;
+    	font-size: 20px;
+    	color: #2f2f2f;
+    }
+
+    .contents_classification a:not(:last-child)::after{
+        content: 'ㅣ'
+    }
+
+    .contents_star{
+    	font-size: 20px;
+    	color: #2f2f2f;
+    	margin-top: 16px;
+    }
+
+    .contents_star span{
+    	color: #f5ca00;
+    }
+
+    .contents_tag{
+    	font-size: 24px;
+    	color: #2f2f2f;
+    	margin-top: 16px;
+    	font-weight: 700;
+    }
+
+    .contents_classification span{
+        color: blue;
+    }
+
+    .star{
+    	color: #f5ca00;
+    	margin-top: 8px;
+    	font-size: 36px;
+    }
+
+    .buttons{
+    	margin-top: 24px;
+    }
+
+    .dddsss{
+    	margin-left: 20px;
+    }
+
+    .more_information{
+    	background-color: #F3F3F3;
+    	height: 850px;
+    	margin-top: 32px;
+    	padding-top: 48px;
+    }
+
+    .inner_box{
+    	width: 1440px;
+    	height: 770px;
+    	margin-left: 240px;
+    	background-color: white;
+    	border-radius: 18px;
+    	padding-top: 36px;
+
+    }
+
+    .contents_name2{
+    	font-size: 32px;
+    	font-weight: 700;
+    	margin-left: 36px;
+    }
+
+    .dmdmdm{
+    	margin-left: 36px;
+    	font-size: 20px;
+    	margin-top: 24px;
+    }
+
+    .term{
+    	color: #B1AFAF;
+
+    }
+    .term span{
+    	color: #484747;
+    	margin-left: 24px;
+    }
+
+    .time1{
+    	color: #B1AFAF;
+    	margin-top: 12px;
+    }
+    .time1 span{
+    	color: #484747;
+    	margin-left: 24px;
+    }
+
+    .time2{
+    	color: #484747;
+    	margin-left: 64px;
+    	margin-top: 6px;
+    }
+
+    .ddff{
+    	margin-top: 26px;
+    }
+
+    .place{
+    	color: #B1AFAF;
+    	margin-top: 12px;
+    }
+    .place span{
+    	color: #484747;
+    	margin-left: 24px;
+    }
+
+    .contents_name3{
+    	font-size: 32px;
+    	font-weight: 700;
+    	margin-left: 36px;
+    	margin-top: 48px;
+    }
+
+    .photos{
+    	
+    	margin-top: 24px;
+    	padding-left: 36px;
+    	padding-right: 36px;
+    }
+
+    .photos img{
+
+        
+    	border-radius: 18px;
+    }
+
+    .a{
+    	margin-right: 28px;
+    }
+
+    .b{
+    	margin-right: 28px;
+    }
+
+    .c{
+    	margin-right: 28px;
+    }
+
+    .footer {
+    clear: both;
+    position: relative;
+    height: 150px;
+    
+    padding-top: 34px;
+    border-top: 1px solid #eef1f3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f7f9fa;
+    zoom: 1;
+
+    }
+
+    .footer {
+        background-color: #f8f9fa;
+        height: 100px;
+        padding-top: 20px;
+        
+
+    }
+
+    .footer p{
+        text-align: center;
+        font-size: 12px;
+        color: #AAAAAA;
+        margin-bottom: 5px;
+    }
+
+    .footer div{
+        text-align: center;
+    }
+
+    .footer a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #AAAAAA;
+       
+    }
+
+    .footer_a{
+        margin-bottom: 30px;
+    }
+
+    .footer a:not(:last-child)::after{
+        content: 'ㅣ'
+    }
+
+    
+
+
+    
+
+
+	</style>
+</head>
+<body>
+	<div class="navibar">
+		<a href="../index.html" id="logo">
+			<img src="https://i.postimg.cc/kG3WJ2qQ/naverlogo.png" height="24">
+		</a>
+
+
+		<ul id="menu">
+          <li><a href="../index.html">전체</a></li>
+          <li><a href="../카테고리/카테고리_연극.html">연극</a></li>
+          <li><a href="../카테고리/카테고리_뮤지컬.html">뮤지컬</a></li>
+          <li><a href="#">콘서트</a></li>
+          <li><a href="#">가족/아동</a></li>
+        </ul>
+	</div>
+
+	<div class="header">
+	    <img src="https://i.postimg.cc/c4K7Rwjz/image.jpg" width="240">
+	</div>
+
+	<div class="poster">
+		
+		<div class="contents_information">
+		    <div class="contents_name">한뼘사이<img src="https://i.postimg.cc/j2s6g0yr/3.png" width="60"></div>
+		    <div class="contents_classification">
+			    <a href="#"><span>연극</span></a>
+                <a href="#">만 12세 이상</a>
+                <a href="#">100분</a>
+		    </div>
+            <div class="contents_star">네이버 예약 <span>★</span> <b>9.4</b>   </span>인터파크 <span> ★ </span><b>9.9</b>    예스24<span> ★ </span> <b>10.0</b></div>
+            <div class="contents_tag"> 평가하기</div>
+            <div class="star">★★★★★</div>
+            <div class="buttons">
+                <a href="https://booking.naver.com/booking/12/bizes/69133?area=bni"><img src="https://i.postimg.cc/9QdXdJGy/2131.png" width="100"></a>
+                <a href="https://map.naver.com/v5/entry/place/11639701"><img class="dddsss" src="https://i.postimg.cc/Bbzbzb6D/4.png" width="100"></a></div>
+        </div>
+	</div>
+
+	<div class="more_information">
+		<div class="inner_box">
+			<div class="contents_name2">공연 정보</div>
+			    <div class="dmdmdm">
+			        <div class="term">기간 <span>2017.03.01 ~ 오픈런</span></div>
+			        <div class="time1">시간 <span>월~금 15:00, 17:30, 19:45</span></div>
+			        <div class="time2">토, 일 13:50, 16:00, 18:10, 20:20</div>
+			           <div class="ddff">
+			               <div class="time2"><span>* 12/24(목) 13:00, 15:00, 17:00, 19:00, 21:00</span></div>
+			               <div class="time2"><span>* 12/25(금) 13:00, 15:00, 17:00, 19:00, 21:00</span></div>
+                           <div class="time2"><span>* 12/26(토) 13:00, 15:00, 17:00, 19:00, 21:00</span></div>
+                           <div class="time2"><span>* 12/31(목) 13:50, 16:00, 18:10, 20:20</span></div>
+			           </div>
+			        <div class="place">장소 <span>서연아트홀</span></div>
+			        <div class="place">배우 <span>김종훈, 온정, 양민직</span></div>
+			        <div class="place">내용 <span>한 뼘 남짓한 사이를 둔 4명의 오피스텔 이웃들, 불같은 성격의 걸크러쉬 강력부 마검사와 속마음은 1도 전하지 못하는 까불이, 검...    더보기</span></div>
+			    </div>
+			
+            <div class="contents_name3">공연 사진</div>
+			<div class="photos">
+				
+				<img class="a" src="https://i.postimg.cc/XYTrCNzS/4.jpg " width="318" height="206">
+			    <img class="b" src="https://i.postimg.cc/kG4JHLpv/1.jpg" width="318" height="206">
+				<img class="c" src="https://i.postimg.cc/DzP7w2Vc/3.jpg" width="318" height="206">
+			    <img class="d" src="https://i.postimg.cc/wvxgtSgY/2.jpg" width="318" height="206">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+        <p> Copyright&copy; Naver Corp. All Rights Reserved.</p>
+        <div class="footer_a">
+            <a href="#">제휴제안</a>
+            <a href="#">기업윤리 상담센터</a>
+            <a href="#">개인정보 처리방침</a>
+        </div>
+                
+            
+        
+    </div>
+
+
+	
+</body>
+</html>
